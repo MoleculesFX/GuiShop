@@ -1,0 +1,293 @@
+#This plugin was made by MoleculesFX
+#Off Topic, optictbsof is my spigot name.
+
+#First of all before you go down and tweak the config here are some tips:
+
+#The first line of the sign should be [GUIShop], set this in any CaSeS you want.
+
+#The second line of the sign should be the Item Code like 1 for the item Stone, 155 for Quarts Block and so fort,
+#If the item has a Item Tag like ItemCode/ItemTag or 1/1 for Granite,
+#You can see item codes or itemtags by Pressing F3 + H on your keyboard while playing on a server
+#or on a Single Player world.
+
+#The third line will be the Buy Price for the item. Put the exact numbers,
+#Of course you can always put decimals or a decimal point. Lel im a Pilipino... Please try to understand
+
+#For the forth and last line is the same as Buy Price but it will be the Sell Price.
+
+#Prefixes you can only use in BuyItems and SellItems are:
+# %buyprice% - Shows the item's buy price with the following amount.
+# %sellprice% - Shows the item's sell price with the following amount.
+# %balance% - Shows the player's balance!
+# %displayname% - Shows the player's displayername. I dont know if it places a player's prefix!
+# %player% - Shows the player's original names if he/she has a nick or a thingamajiga!
+# %itemname% - Show's the current items friendlyname. Gets the item's name from the sign.
+
+#Prefixes you can only use in DispItems are:
+# %balance% - Shows the player's balance!
+# %displayname% - Shows the player's displayername. I dont know if it places a player's prefix!
+# %player% - Shows the player's original names if he/she has a nick or a thingamajiga!
+
+#Set this to false if you dont want to check for updates.
+enable-update-checker: true
+#Set the Prefix for the GUIShop. example: [GUIShop]You dont have enough permission!
+Prefix: '&e&l[&bGUIShop&e&l]'
+#Set the Title of the Inventory/GUI.
+GUITitle: '&b&lGUIShop &8&l| &a&l%itemname%'
+#Set the Rows. example: 1 row is equals to 9 slots, 2 rows is equals to 18 slots and so on.
+Rows: 3
+#Here is where you customize the Glass Panes.
+
+#This will be the one that is under your BuyItems/SellItems Lore.
+#If you Edit this please make sure that '%price%' is present,
+#This will be use to get the price of the item. LOEL :3
+#if you dont know what to do with this, just leave this.
+PriceStyle:
+  - '&f&l&m---------------'
+  - '&e&l%price%'
+  - '&f&l&m---------------'
+  - ''
+
+BuyItems:
+  #You can change 1 to anything you want like a name or something.
+  1:
+    #Amount of the item on the Gui/Inventory.
+    Amount: 64
+    #The slot where it will be placed.
+    Slot: 10
+    #The Item Lores.
+    #Change it to whatever you want.
+    Lores:
+      - ''
+      - '&4&l[&f&lClick to buy.&4&l]'
+      - '&f&l1 &a&l%itemname% &f&lfor &e&l%buyprice%'
+      - ''
+  2:
+    Amount: 32
+    Slot: 11
+    Lores:
+      - ''
+      - '&4&l[&f&lClick to buy.&4&l]'
+      - '&f&l1 &a&l%itemname% &f&lfor &e&l%buyprice%'
+      - ''
+  3:
+    Amount: 16
+    Slot: 12
+    Lores:
+      - ''
+      - '&4&l[&f&lClick to buy.&4&l]'
+      - '&f&l1 &a&l%itemname% &f&lfor &e&l%buyprice%'
+      - ''
+  4:
+    Amount: 1
+    Slot: 13
+    Lores:
+      - ''
+      - '&4&l[&f&lClick to buy.&4&l]'
+      - '&f&l1 &a&l%itemname% &f&lfor &e&l%buyprice%'
+      - ''
+SellItems:
+  1:
+    Amount: 1
+    Slot: 15
+    Lores:
+      - ''
+      - '&4&l[&f&lClick to sell.&4&l]'
+      - '&f&l1 &a&l%itemname% &f&lfor &e&l%sellprice%'
+      - ''
+  2:
+    Amount: 16
+    Slot: 16
+    Lores:
+      - ''
+      - '&4&l[&f&lClick to sell.&4&l]'
+      - '&f&l1 &a&l%itemname% &f&lfor &e&l%sellprice%'
+      - ''
+  3:
+    Amount: 32
+    Slot: 17
+    Lores:
+      - ''
+      - '&4&l[&f&lClick to sell.&4&l]'
+      - '&f&l1 &a&l%itemname% &f&lfor &e&l%sellprice%'
+      - ''
+  4:
+    Amount: 64
+    Slot: 18
+    Lores:
+      - ''
+      - '&4&l[&f&lClick to sell.&4&l]'
+      - '&f&l1 &a&l%itemname% &f&lfor &e&l%sellprice%'
+      - ''
+DispItems:
+  1:
+    Name: ' '
+    ID: 160
+    ItemTag: 14
+    Amount: 1
+    Slot: 1
+    Lores: []
+  2:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 2
+    Lores: []
+  3:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 3
+    Lores: []
+  4:
+    Name: ' '
+    ID: 160
+    ItemTag: 14
+    Amount: 1
+    Slot: 4
+    Lores: []
+  5:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 5
+    Lores: []
+  6:
+    Name: ' '
+    ID: 160
+    ItemTag: 14
+    Amount: 1
+    Slot: 6
+    Lores: []
+  7:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 7
+    Lores: []
+  8:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 8
+    Lores: []
+  9:
+    Name: ' '
+    ID: 160
+    ItemTag: 14
+    Amount: 1
+    Slot: 9
+    Lores: []
+  19:
+    Name: ' '
+    ID: 160
+    ItemTag: 14
+    Amount: 1
+    Slot: 19
+    Lores: []
+  20:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 20
+    Lores: []
+  21:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 21
+    Lores: []
+  22:
+    Name: ' '
+    ID: 160
+    ItemTag: 14
+    Amount: 1
+    Slot: 22
+    Lores: []
+  23:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 23
+    Lores: []
+  24:
+    Name: ' '
+    ID: 160
+    ItemTag: 14
+    Amount: 1
+    Slot: 24
+    Lores: []
+  25:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 25
+    Lores: []
+  26:
+    Name: ' '
+    ID: 160
+    ItemTag: 15
+    Amount: 1
+    Slot: 26
+    Lores: []
+  27:
+    Name: ' '
+    ID: 160
+    ItemTag: 14
+    Amount: 1
+    Slot: 27
+    Lores: []
+#This is the Player Heads part on the GUI.
+  28:
+    Name: "&b&l%player%'s"
+    ID: 397
+    ItemTag: 3
+    #If you want players to see their Player Head set this to false.
+    #If you want a custom Player Head you could set this to true.
+    CustomSkull: true
+    #If you set CustomSkull to true, put the name of the Player Head you want in here.
+    CustomSkullName: '%player%'
+    Amount: 1
+    Slot: 14
+    Lores:
+      - '&e&lBalance:'
+      - ''
+      - '&f&l&m----------'
+      - '&6&l$%balance%'
+      - '&f&l&m----------'
+      - ''
+      
+Sign-Format:
+  Prefix:
+    Line: 1
+    Format: '&1&l[&2&lGUIShop&1&l]'
+  Buy:
+    Line: 3
+    before-price: '&aBuy: &6$'
+    after-price: '&1/each'
+    cant-buy: "&4Can't Buy this item!"
+  Sell:
+    Line: 4
+    before-price: '&aSell: &6$'
+    after-price: '&1/each'
+    cant-sell: "&4Can't Sell this item!"
+
+Messages:
+  Sign-Created: '&bSign created successfully!'
+  No-Permission: '&cYou dont have enough permission!'
+  Buy-Success: '&aTransaction completed successfully!'
+  Sell-Success: '&aTransaction completed successfully!'
+  Inventory-Full: '&cYour inventory is full!'
+  No-Money: '&cYou dont have enough money!'
+  No-Items: '&cYou dont have enough items to sell!'
+  Reloaded: '&bConfig reloaded successfully!'
+  Sign-Point-Error: 'You must be pointing to a Sign!'
